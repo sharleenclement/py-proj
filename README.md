@@ -1,2 +1,2 @@
-# python-proj
+# py-proj
 Basic Python Projects.
