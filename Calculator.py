@@ -1,13 +1,12 @@
-#  continuous mathematical operation (like a calculator)
 
-import re
+import re # RegEx module
 
 print("This is a calculator.")
 print("Type 'quit' when you want to stop.\n")
 
 value = 0
 run = True
-#  variable scope
+# variable scope
 
 def performMath():
     global run
