@@ -14,8 +14,7 @@ def performMath():
     if value == 0:
         equation = input("Enter the equation: ")
     else:
-        # print the previous value and take an input on the side
-        equation = input(str(value))
+        equation = input(str(value)) # print the previous value and take an input on the side
 
     if equation == 'quit':
         print("Goodbye, hooman.")
@@ -24,10 +23,9 @@ def performMath():
         equation = re.sub('[^0-9-/*%+.]','',equation)
 
         if value == 0:
-            # evaluates when it is the first input or when previous is 0.
-            value = eval(equation)
+            value = eval(equation) # evaluates when it is the first input or when previous is 0.
         else:
-            value = eval(str(value) + equation)
+            value = eval(str(value) + equation) # evaluates the previous value and the current value
 
         print(value)
 
